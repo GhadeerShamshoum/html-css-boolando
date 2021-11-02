@@ -24,7 +24,13 @@ body{
     float: left;
     margin: 5px;
     width: 30%;
-    height: 350px; 
+    height: 390px; 
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 img{
@@ -67,6 +73,10 @@ img{
 }
 
 .heart{
+    display: none;
+}
+.prodotto:hover .heart{
+    display: block;
     height: 28px;
     width: 28px;
     position: absolute;
@@ -87,7 +97,7 @@ img{
 
 .sale, .Sostenibilità{
     position: absolute;
-    bottom: 35px;
+    bottom: 76px;
     height: 20px;
     font-size: 10px;
     color: white;
